@@ -1,0 +1,148 @@
+body {
+    font-family: "Cambria Math";
+}
+
+.site-title {
+    /* Seleccionamos un margen para que horizontalmente quede centrado en el grid que se encuentra y verticalmente
+     tanto arriba como abajo, de 15 pixeles. */
+    margin: 15px auto;
+    font-size: 3em;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    align-items: center;
+    background-color: #385998;
+    color: #FFFFFF;
+}
+
+/* Se dan estilos a los enlaces */
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* Cuando se coloca el puntero encima, lo cambia el estilo del puntero del mouse */
+.my-nav li:hover {
+    cursor: pointer;
+
+}
+
+/* Alineamos el menú hacia la parte derecha */
+.my-nav {
+    text-align: right;
+    font-size: 1.1em;
+    margin-right: 15px;
+}
+
+/* Le damos estilo al nav con los menús principales */
+nav ul li {
+    border-left: 2px solid #6D84B4;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+}
+
+/* Configuramos en negro la letra de los submenús */
+ul li ul a {
+    color: black;
+}
+
+/* Cambiamos el color de la letra cuando el puntero está sobre un menú base */
+.nav-root > a:hover {
+    color: #D8DFEA;
+}
+
+/* Ocultamos los submenús y configuramos su color de fondo*/
+nav ul li ul {
+    background: white;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+}
+
+/* Damos el estilo cuando el puntero se encuentra encima del menú principal y tiene submenús */
+nav ul li:hover > ul,
+nav ul li ul:hover {
+    visibility: visible;
+    box-shadow: 0px 3px 5px -1px #ccc;
+    text-align: left;
+    padding-top: 20px;
+    display: block;
+}
+
+/* Organiza los sub menús en columna */
+ul li ul li {
+    text-align: left;
+    clear: both;
+    margin-bottom: 20px;
+    border-style: none;
+    width: 100%;
+}
+
+/* Efecto para cuando se pasa el puntero del mouse sobre un sub menú */
+ul li ul li a:hover {
+    padding-left: 4px;
+    transition: all 0.4s;
+}
+
+/* ESTILOS PARA EL CONTAINER */
+.container {
+    display: grid;
+    grid-template-columns: 75% 20%;
+    background: #ededed;
+}
+
+.container-3 {
+    display: flex;
+    background: #ededed;
+}
+
+section {
+    padding: 15px;
+    argin: auto;
+}
+
+/* Se centra la imagen en el div  */
+.image {
+    max-width: 95%;
+    display: block;
+    margin: auto;
+}
+
+#my-aside {
+    margin: auto;
+    max-width: inherit;
+    background: #FFFFFF;
+    padding: 32px;
+    max-height: 80%;
+    min-width: 90%;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
+.content-div {
+    margin: 15px auto;
+    flex: 29%;
+    max-width: 29%;
+    background: #FFFFFF;
+    padding: 32px;
+    border-radius: 6px;
+
+}
+
+.my-aside-span {
+    display: inline
+}
+
+/* ESTILOS PARA EL FOOTER */
+.footer {
+    padding: 32px;
+    border-top: 1px solid #D8DFEA;
+    background-color: #D8DFEA;
+    text-align: right !important;
+}
