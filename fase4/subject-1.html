@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiquetas semánticas, Listas y enlaces</title>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <title>Etiquetas semánticas, Listas y enlaces</title>
+            <link rel="stylesheet" href="../css/styles.css">
+        </head>
+<body>
+<header>
+    <div class="nav-container">
+        <h1 class="site-title">Diseño de sitios web</h1>
+        <nav class="my-nav" role="navigation">
+
+            <ul class="nav-ul">
+                <li><a class="nav-root" href="design.html">Inicio</a></li>
+                <li class="nav-root"><a href="#">Temas &dtrif;</a>
+                    <ul class="nav-secondary">
+                        <li><a href="subject-1.html">Tema 1</a></li>
+                        <li><a href="subject-2.html">Tema 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-root"><a href="#">Recursos Digitales &dtrif;</a>
+                    <ul class="nav-secondary">
+                        <li class="nav-secondary"><a href="resource-1.html">Recurso 1</a></li>
+                        <li class="nav-secondary"><a href="resource-2.html">Recurso 1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-root"><a href="#">Aprendizaje &dtrif;</a>
+                    <ul class="nav-secondary">
+                        <li class="nav-secondary"><a href="activity-1.html">Actividad 1</a></li>
+                        <li class="nav-secondary"><a href="activity-2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-root"><a href="about.html">Acerca de</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+<div class="container-3">
+    <div class="content-div">
+        <section>
+            <h3>Etiquetas semánticas, Listas y enlaces</h3>
+            <p>Este sitio se desarrollará un Objeto virtual de aprendizaje, con el fin de dinamizar la estrategia de
+                aprendizaje para el diseño de sitios web, generando una fuente de fácil entendimiento y comprensión para
+                los estudiantes, apoyándose en recursos multimedia.
+            </p>
+            <p> Antes que nada, debemos tener en cuenta que HTML se rige por las etiquetas. Éstas definen cómo es
+                interpretado
+                por el navegador el archivo .html creado con las mismas.
+            </p>
+            <p>Resumiremos las etiquetas más importantes y su uso.</p>
+        </section>
+    </div>
+    <div class="content-div">
+        <p>Destacaremos las principales, comenzando por las etiquetas de texto.</p>
+
+        <ul>
+            <li>
+                <b>Texto</b>
+                <ul>
+                    <li>
+                        <b>&lt;hx&gt;:</b> Es la etiqueta usada para títulos o subtítulos donde x,
+                        representa un número del 1 al 6, en donde el 1 es el tamaño más grande que puede tomar
+                        con la etiqueta <strong>h</strong> (&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,
+                        &lt;h5&gt;,&lt;h6&gt;).
+                        <h4>Ejemplo de la etiqueta &lt;h4&gt;</h4>
+                    </li>
+                    <li>
+                        <b>&lt;p&gt;:</b> Etiqueta usada para representar un párrafo, en donde por defecto,
+                        los navegadores asignan un margen en la parte superior.
+                    </li>
+                    <li>
+                        <b>&lt;pre&gt;:</b> Representa un texto con formato predefinido,, como si fuera un
+                        código de programación.
+                        <pre>Ejemplo de la etiqueta &lt;pre&gt;</pre>
+                    </li>
+                    <li>
+                        <b>&lt;span&gt;:</b> Es una etiqueta que puede contener, desde un caracter hasta
+                        una palabra o párrafo, que inicialmente no le aplica ningún estilo a su contenido,
+                        pero que con CSS, puede personalizar su estilo.
+                    </li>
+                    <li>
+                        <b>&lt;br&gt;:</b> Se usa para dar saltos de línea.
+                    </li>
+                    <li>
+                        <b>&lt;em&gt;:</b> Etiqueta usada para dar énfasis, muestra el texto en letra cursiva.
+                        <br>
+                        <em>Ejemplo de la etiqueta &lt;em&gt;</em>
+                    </li>
+                    <li>
+                        <b>&lt;strong&gt;:</b> Esta etiqueta se usa para dar importancia al texto, mostrándolo
+                        en negrilla.
+                        <br>
+                        <strong>Ejemplo de la etiqueta &lt;strong&gt;</strong>
+                    </li>
+                    <li>
+                        <b>&lt;u&gt;:</b> Esta etiqueta es usada para que el texto que se encuentre en ella
+                        se muestra subrayado
+                        <br>
+                        <u>Ejemplo de la etiqueta &lt;u&gt;</u>
+                    </li>
+                    <li>
+                        <b>&lt;p&gt;:</b>Esta etiqueta es usada para resaltar el texto.
+                        <br>
+                        <mark>Ejemplo de la etiqueta &lt;mark&gt;</mark>
+                    </li>
+                    <li>
+                        <b>&lt;small&gt;:</b>: Se usa para que las palabras contenidas en la etiqueta, se
+                        muestren en un texto más pequeño.
+                        <br>
+                        <small>Ejemplo de la etiqueta &lt;small&gt;</small>
+                    </li>
+                    <li>
+                        <b>&lt;cite&gt;:</b> Es la etiqueta comunmente usada para citar el autor de algo en
+                        particular.
+                        <br>
+                        <cite>Ramírez, A. (2021). Etiquetas semánticas, Listas y enlaces. Ejemplo de &lt;cite&gt;</cite>
+                    </li>
+                    <li>
+                        <b>&lt;a&gt;:</b> Se usa para agregar un enlace al documento. los attributos más
+                        comunes usados en esta etiqueta son <strong>href</strong> y <strong>target</strong>.
+                        <br>
+                        <a href="https://google.com.co" target="_blank">Ejemplo de la etiqueta &lt;a&gt;</a>
+                    </li>
+                    <li>
+                        <b>&lt;ul&gt;:</b> Se usa para generar listas sin ordenar. Cada uno de los elementos
+                        de la lista, se debe generar con las etiquetas.&lt;li&gt;
+                    </li>
+                    <li>
+                        <b>&lt;ol&gt;:</b> Se usa para generar listas con un orden ordenar. Cada uno de los elementos
+                        de la lista, se debe generar con las etiquetas.&lt;li&gt;
+                    </li>
+                </ul>
+            </li>
+            <br>
+        </ul>
+    </div>
+    <div class="content-div">
+        <ul>
+            <li>
+                <p><b>Elementos Estructurales</b></p>
+                <p>Dentro de las etiquetas que definen la estructura tenemos las siguientes:</p>
+                <ul>
+                    <li><b>&lt;html&gt;:</b> Con esta etiqueta se da inicio y fin al código html. Puede incluir un
+                        atributo llamado <strong>lang</strong> en el cual se define el idioma del contenido del archivo
+                        html.
+                    </li>
+                    <li><b>&lt;head&gt;:</b>En esta etiqueta se anida toda la información que se requiere para
+                        configurar la página, como los son el título, el tipo de codificación de los carácteres del
+                        mismo,
+                        así como la ubicación de los archivos externos requeridos, como lo son CSS y Javascript.
+                    </li>
+                    <li><b>&lt;body&gt;:</b> Delimita todo el código que genera el contenido del documento, básicamente
+                        la parte visible del mismo.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Para distribución dentro de la página.</b>
+                <ul>
+                    <li>
+                        <b>&lt;div&gt;:</b> Se usa para realizar una división genérica en el documento.
+                    </li>
+                    <li>
+                        <b>&lt;section&gt;:</b> Este elemento define una sección genérica.
+                    </li>
+                    <li>
+                        <b>&lt;aside&gt;:</b> Este elemento define una división que contiene información
+                        relacionada con el contenido principal pero que no es parte del mismo, como
+                        referencias a artículos o enlaces que apuntan a publicaciones anteriores.
+                    </li>
+                    <li>
+                        <b>&lt;article&gt;:</b> Se usa para representar un artículo independiente.
+                    </li>
+                    <li>
+                        <b>&lt;header&gt;:</b> Se usa para definir cabeceras.
+                    </li>
+                    <li>
+                        <b>&lt;footer&gt;:</b> Se usa para definir pie de página.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="footer">
+    <p><cite>Gauchat, J. (2017). El gran libro de HTML5, CSS3 y JavaScript. Tercera Edición.</cite></p>
+    <p><b> Universidad Nacional Abierta y a Distancia</b></p>
+    <p><b> Escuela de Ciencias Básicas, Tecnología e Ingeniería</b></p>
+    <p><b> Ingeniería de Sistemas</b></p>
+    <p><b> CEAD José Acevedo y Gómez</b></p>
+    <cite>&copy; 2021 </cite>
+</footer>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
