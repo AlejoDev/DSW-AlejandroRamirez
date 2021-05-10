@@ -2,62 +2,87 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>El autor</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>SEO</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom-css.css">
 </head>
 <body>
 <header>
-    <div class="nav-container">
-        <h1 class="site-title">Diseño de sitios web</h1>
-        <nav class="my-nav" role="navigation">
-
-            <ul class="nav-ul">
-                <li><a class="nav-root" href="design.html">Inicio</a></li>
-                <li class="nav-root"><a href="#">Temas &dtrif;</a>
-                    <ul class="nav-secondary">
-                        <li><a href="subject-1.html">Tema 1</a></li>
-                        <li><a href="subject-2.html">Tema 2</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #385998;">
+        <a class="navbar-brand" href="design.html">Diseño de sitios web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="design.html">Inicio</a>
                 </li>
-                <li class="nav-root"><a href="#">Recursos Digitales &dtrif;</a>
-                    <ul class="nav-secondary">
-                        <li class="nav-secondary"><a href="resource-1.html">Recurso 1</a></li>
-                        <li class="nav-secondary"><a href="resource-2.html">Recurso 1</a></li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Temas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="subject-1.html">HTML</a>
+                        <a class="dropdown-item" href="subject-2.html">SEO</a>
+                    </div>
                 </li>
-                <li class="nav-root"><a href="#">Aprendizaje &dtrif;</a>
-                    <ul class="nav-secondary">
-                        <li class="nav-secondary"><a href="activity-1.html">Actividad 1</a></li>
-                        <li class="nav-secondary"><a href="activity-2.html">Actividad 2</a></li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos Digitales
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="resource-1.html">Recurso 1</a>
+                        <a class="dropdown-item" href="resource-2.html">Recurso 2</a>
+                    </div>
                 </li>
-                <li class="nav-root"><a href="#">Acerca de</a></li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">Acerca de</a>
+                </li>
             </ul>
-
-        </nav>
-    </div>
+        </div>
+    </nav>
 </header>
+<!-- START CONTENT-->
 <div class="container">
-    <section>
-    </section>
-    <aside id="my-aside">
-        <h2>Acerca del autor</h2>
-        <p>
-            <b>Nombre:</b> Alejandro Esteban Ramírez Alarcón
-        </p>
-        <h4>Datos de contacto:</h4>
-        <p><b>Teléfono:</b> 3012753413</p>
-        <p><b>Correo electrónico:</b> alejandro@simaro.co</p>
-        <p><b>Skype:</b> alejandro.r.dev</p>
-    </aside>
+    <div class="row mt-5">
+        <div class="col-sm-12">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <h2>Acerca del autor</h2>
+                    <p>
+                        <b>Nombre:</b> Alejandro Esteban Ramírez Alarcón
+                    </p>
+                    <h4>Datos de contacto:</h4>
+                    <p><b>Teléfono:</b> 3012753413</p>
+                    <p><b>Correo electrónico:</b> alejandro@simaro.co</p>
+                    <p><b>Skype:</b> alejandro.r.dev</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<footer class="footer">
-    <p><cite>Gauchat, J. (2017). El gran libro de HTML5, CSS3 y JavaScript. Tercera Edición.</cite></p>
-    <p><b> Universidad Nacional Abierta y a Distancia</b></p>
-    <p><b> Escuela de Ciencias Básicas, Tecnología e Ingeniería</b></p>
-    <p><b> Ingeniería de Sistemas</b></p>
-    <p><b> CEAD José Acevedo y Gómez</b></p>
-    <cite>&copy; 2021 </cite>
+<footer class="page-footer font-small color-dark pt-4 mt-5">
+    <div class="container-fluid">
+        <p><cite>Gauchat, J. (2017). El gran libro de HTML5, CSS3 y JavaScript. Tercera Edición.</cite></p>
+        <p><cite>Idento. (s.f.). SEO: ¿Qué es y cuál es su significado?</cite></p>
+        <p><b> Universidad Nacional Abierta y a Distancia</b></p>
+        <p><b> Escuela de Ciencias Básicas, Tecnología e Ingeniería</b></p>
+        <p><b> Ingeniería de Sistemas</b></p>
+        <p><b> CEAD José Acevedo y Gómez</b></p>
+    </div>
+    <div class="copyright-footer text-center py-3"><cite>&copy; 2021 </cite>
+    </div>
 </footer>
 </body>
 </html>
